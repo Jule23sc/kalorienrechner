@@ -5,46 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>github branches übung</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script defer src="./assets/js/"></script>
+    <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
     <header>
         <h1>Kalorienrechner</h1>
     </header>
     <section>
-        <form>
+        <form class="input-form">
         <article>
             <div>
-                <h5>Körpergröße</h5>
-                <input type="text">
-                <label for=""></label>
+                <div>
+                    <label for="">Körpergröße</label>
+                </div>
+                <input type="text" id="body-size">
             </div>
             <div>
-                <h5>Alter</h5>
-            <input type="text">
-            <label for=""></label>
+                <div>
+                <label for="">Alter</label>
+            </div>
+                <input type="text" id="age">
             </div>
             <div>
-                <h5>Gewicht</h5>
-            <input type="text">
-            <label for=""></label>
+                <div>
+                    <label for="">Gewicht</label>
+                </div>
+                <input type="text" id="weight">
             </div>
             <div>
-                <h5>Körperbau</h5>
+                <div>
+                    <label for="">Körperbau</label>
+                </div class="radio" >
             <input type="radio" name="sex" id="female">
             <label for="female">Weiblich</label>
             <input type="radio" name="sex" id="male">
             <label for="male">Männlich</label>
             </div>
             <div>
-                <h5>Arbeits- und Freizeitaktivität</h5>
+                <div>
+                <label for="">Arbeits- und Freizeitaktivität</label>
+                </div>
                 <select name="pulldown" id="pulldown">
-                    <option value="">Schlafen</option>
-                    <option value="">Nur Sitzen oder Liegen</option>
-                    <option value="">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
-                    <option value="">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
-                    <option value="">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
-                    <option value="">Körperlich anstrengende berufliche Arbeit</option>
+                    <option value="0.95">Schlafen</option>
+                    <option value="1.2">Nur Sitzen oder Liegen</option>
+                    <option value="1.5">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                    <option value="1.7">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="1.9">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                    <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
                 </select>
             </div>
         </article>
