@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github branches übung</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/"></script>
+</head>
+<body>
+    <header>
+        <h1>Kalorienrechner</h1>
+    </header>
+    <section>
+        <form>
+        <article>
+            <div>
+                <h5>Körpergröße</h5>
+                <input type="text">
+                <label for=""></label>
+            </div>
+            <div>
+                <h5>Alter</h5>
+            <input type="text">
+            <label for=""></label>
+            </div>
+            <div>
+                <h5>Gewicht</h5>
+            <input type="text">
+            <label for=""></label>
+            </div>
+            <div>
+                <h5>Körperbau</h5>
+            <input type="radio" name="sex" id="female">
+            <label for="female">Weiblich</label>
+            <input type="radio" name="sex" id="male">
+            <label for="male">Männlich</label>
+            </div>
+            <div>
+                <h5>Arbeits- und Freizeitaktivität</h5>
+                <select name="pulldown" id="pulldown">
+                    <option value="">Schlafen</option>
+                    <option value="">Nur Sitzen oder Liegen</option>
+                    <option value="">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen Aktivität in der Freizeit, z.B. Büroarbeit</option>
+                    <option value="">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit, z.B. Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+                    <option value="">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner, Handwerker, Mechaniker, Hausfrauen</option>
+                    <option value="">Körperlich anstrengende berufliche Arbeit</option>
+                </select>
+            </div>
+        </article>
+        <article>
+            <button type="submit">Submit</button>
+            <div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>kcal</th>
+                        <th>kJ</th>
+                    </tr>
+                    <tr>
+                        <td>Grundumsatz</td>
+                        <td class="grundumsatz-kcal"></td>
+                        <td class="grundumsatz-kj"></td>
+                    </tr>
+                    <tr>
+                        <td>Gesamtumsatz</td>
+                        <td class="gesamtumsatz-kcal"></td>
+                        <td class="gesamtumsatz-kj"></td>
+                    </tr>
+                </table>
+            </div>
+            <p>Das Ergebnis des Rechners sollten Sie als Orientierungswert ansehen, da es verschiedene Fehlermöglichkeiten gibt wie abweichender Grundumsatz, falsche Zeiteinschätzung, etc.</p>
+        </article>
+    </form>
+    </section>
+</body>
+</html>
