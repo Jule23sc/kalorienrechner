@@ -76,11 +76,11 @@ inputForm.addEventListener("submit", (event) => {
   let gesamtumsatzKcal = grundumsatzKcal * palFactor;
   let gesamtumsatzKj = grundumsatzKj * palFactor;
 
-  grundumsatzKcal = (grundumsatzKcal.toFixed(0) / 1000).toPrecision(4);
-  grundumsatzKj = (grundumsatzKj.toFixed(0) / 1000).toPrecision(4);
+  grundumsatzKcal = Number(grundumsatzKcal.toFixed(0)).toLocaleString();
+  grundumsatzKj = Number(grundumsatzKj.toFixed(0)).toLocaleString();
 
-  gesamtumsatzKcal = (gesamtumsatzKcal.toFixed(0) / 1000).toPrecision(4);
-  gesamtumsatzKj = (gesamtumsatzKj.toFixed(0) / 1000).toPrecision(4);
+  gesamtumsatzKcal = Number(gesamtumsatzKcal.toFixed(0)).toLocaleString();
+  gesamtumsatzKj = Number(gesamtumsatzKj.toFixed(0)).toLocaleString();
 
   outputGrundKcal.textContent = grundumsatzKcal;
   outputGrundKj.textContent = grundumsatzKj;
